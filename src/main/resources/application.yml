@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  main:
+    web-application-type: servlet
+  datasource:
+    url: jdbc:postgresql://localhost:5432/customer
+    username: pgadmin4@pgadmin.org
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostreSQLDialect
+        format_sql: true
+      show_sql: true
