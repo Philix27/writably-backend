@@ -5,7 +5,7 @@ spring:
   main:
     web-application-type: servlet
   datasource:
-    url: jdbc:postgresql://localhost:5432/customer
+    url: postgres://postgres:postgrespw@localhost:55001/organize
     username: pgadmin4@pgadmin.org
     password: admin
   jpa:
@@ -13,6 +13,6 @@ spring:
       ddl-auto: create-drop
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.PostreSQLDialect
+        dialect: org.hibernate.dialect.PosterSQLDialect
         format_sql: true
       show_sql: true

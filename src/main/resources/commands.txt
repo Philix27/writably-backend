@@ -1,0 +1,19 @@
+docker exec -it postgres-khek bash
+
+// name of container at the end then bash
+
+psql -U postgres
+// name of DB : postgres
+
+\l
+To view all dbs
+
+CREATE DATABASE NAME;
+// To create db
+
+\c dbname
+// to connect to db
+
+WHEN IN A DB AFTER CONNECTING
+\d to view relations
+///can write sql queries for the table
